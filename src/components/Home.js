@@ -25,11 +25,24 @@ import { personalInfo } from '../config/personalInfo';
 
 const Home = () => {
   const [currentText, setCurrentText] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  
   const texts = [
     'Data Scientist',
     'Machine Learning Engineer',
     'Generative AI Engineer',
   ];
+
+  // Preload background image
+  useEffect(() => {
+    if (personalInfo.homeBackgroundImage) {
+      const img = new Image();
+      img.onload = () => setImageLoaded(true);
+      img.src = personalInfo.homeBackgroundImage;
+    } else {
+      setImageLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -58,22 +71,21 @@ const Home = () => {
         }}
       >
         {/* Background Image using CSS background */}
-        {personalInfo.homeBackgroundImage && (
-          <Box
-            sx={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              backgroundImage: `url(${personalInfo.homeBackgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              zIndex: 0,
-            }}
-          />
-        )}
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: personalInfo.homeBackgroundImage 
+              ? `url(${personalInfo.homeBackgroundImage}) center/cover no-repeat, linear-gradient(135deg, rgba(102, 126, 234, 1) 0%, rgba(118, 75, 162, 1) 100%)`
+              : 'linear-gradient(135deg, rgba(102, 126, 234, 1) 0%, rgba(118, 75, 162, 1) 100%)',
+            zIndex: 0,
+            opacity: imageLoaded ? 1 : 0.8,
+            transition: 'opacity 0.5s ease-in-out',
+          }}
+        />
         
         {/* Gradient Overlay - REMOVED to show pure background image */}
         
