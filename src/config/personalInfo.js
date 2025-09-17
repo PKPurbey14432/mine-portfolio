@@ -29,6 +29,9 @@ export const personalInfo = {
   
   // Home Background Image
   homeBackgroundImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop',
+  
+  // Home Background Color (fallback and overlay)
+  homeBackgroundColor: '#0B1426', // Deep space blue that matches the galaxy image
 
   
   // Description

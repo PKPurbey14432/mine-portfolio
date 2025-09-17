@@ -70,7 +70,7 @@ const Home = () => {
           alignItems: 'center',
         }}
       >
-        {/* Background Image using CSS background */}
+        {/* Background Layer with Color and Image */}
         <Box
           sx={{
             position: 'absolute',
@@ -78,11 +78,13 @@ const Home = () => {
             left: 0,
             width: '100%',
             height: '100%',
+            // Space-themed background color that matches the galaxy image
+            backgroundColor: personalInfo.homeBackgroundColor || '#0B1426', // Deep space blue
             background: personalInfo.homeBackgroundImage 
-              ? `url(${personalInfo.homeBackgroundImage}) center/cover no-repeat, linear-gradient(135deg, rgba(102, 126, 234, 1) 0%, rgba(118, 75, 162, 1) 100%)`
-              : 'linear-gradient(135deg, rgba(102, 126, 234, 1) 0%, rgba(118, 75, 162, 1) 100%)',
+              ? `linear-gradient(135deg, rgba(11, 20, 38, 0.7) 0%, rgba(25, 39, 74, 0.7) 50%, rgba(44, 62, 123, 0.7) 100%), url(${personalInfo.homeBackgroundImage}) center/cover no-repeat`
+              : `linear-gradient(135deg, ${personalInfo.homeBackgroundColor || '#0B1426'} 0%, #192750 50%, #2C3E7B 100%)`,
             zIndex: 0,
-            opacity: imageLoaded ? 1 : 0.8,
+            opacity: imageLoaded ? 1 : 0.9,
             transition: 'opacity 0.5s ease-in-out',
           }}
         />
