@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/PKPurbey14432.github.io/mine-portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/PKPurbey14432.github.io/mine-portfolio/static/js/main.c6e1471c.js",
-    "static/js/453.0a01fe50.chunk.js": "/PKPurbey14432.github.io/mine-portfolio/static/js/453.0a01fe50.chunk.js",
-    "static/media/logo.svg": "/PKPurbey14432.github.io/mine-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/PKPurbey14432.github.io/mine-portfolio/static/css/main.5f97111e.css",
+    "main.js": "/PKPurbey14432.github.io/mine-portfolio/static/js/main.84b15f7a.js",
+    "static/js/453.f1db0543.chunk.js": "/PKPurbey14432.github.io/mine-portfolio/static/js/453.f1db0543.chunk.js",
     "index.html": "/PKPurbey14432.github.io/mine-portfolio/index.html",
-    "main.f855e6bc.css.map": "/PKPurbey14432.github.io/mine-portfolio/static/css/main.f855e6bc.css.map",
-    "main.c6e1471c.js.map": "/PKPurbey14432.github.io/mine-portfolio/static/js/main.c6e1471c.js.map",
-    "453.0a01fe50.chunk.js.map": "/PKPurbey14432.github.io/mine-portfolio/static/js/453.0a01fe50.chunk.js.map"
+    "main.5f97111e.css.map": "/PKPurbey14432.github.io/mine-portfolio/static/css/main.5f97111e.css.map",
+    "main.84b15f7a.js.map": "/PKPurbey14432.github.io/mine-portfolio/static/js/main.84b15f7a.js.map",
+    "453.f1db0543.chunk.js.map": "/PKPurbey14432.github.io/mine-portfolio/static/js/453.f1db0543.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c6e1471c.js"
+    "static/css/main.5f97111e.css",
+    "static/js/main.84b15f7a.js"
   ]
 }
